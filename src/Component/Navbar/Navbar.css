@@ -1,0 +1,54 @@
+.navBar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: .5s ease;
+}
+
+.navBar-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar-logo {
+    padding: 20px 15px 0px;
+}
+.navBar-logo img{
+    margin-bottom: 0;
+    max-height: 50px;
+    color: green;
+}
+
+.navBar-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+}
+
+.navBar-menu ul li{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+.navBar-menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 16px
+}
+.navBar-menu ul li:not(:first-child):before {
+    content: "";
+    width: 1px;
+    height: 13px;
+    /* position: absolute; */
+    /* top: 15px; */
+    /* right: calc(100% + 16px); */
+    /* right: 50%; */
+    background: #008ed3;
+}
+
