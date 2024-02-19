@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Home.css"
+import FeaturedBox from '../../Component/FeaturedBox/FeaturedBox'
+import WorkBox from '../../Component/WorkBox/WorkBox'
 
 const Home = () => {
   return (
@@ -8,7 +10,12 @@ const Home = () => {
         Video
       </div>
       <div className="home-featured">
-        Featured in the news 
+        <h2>Featured in the news</h2>
+        <FeaturedBox/>
+      </div>
+      <div className="home-work">
+        <h2>Our Work</h2>
+        <WorkBox/>
       </div>
     </div>
   )

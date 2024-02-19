@@ -58,19 +58,15 @@
 
 #hover-dropdown:hover .dropdown-menu {
     display: block;
+    transform: translate(-30%) scale(1);
 }
 
-.daknclakc{
-    width: 750px;
-    left: initial;
-    right: 50%;
+.dropdown-menu{
     transform: translate(50%) scale(0);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 25px 15px!important;
 }
 
-.dropdown-menu.mega-menu {
+.dropdown-menu.mega-menu open{
+    display: none;
     width: 750px;
     left: initial;
     right: 50%;
