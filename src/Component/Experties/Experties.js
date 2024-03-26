@@ -7,7 +7,11 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Experties = () => {
     return (
         <div className='Experties'>
-            <OwlCarousel className='owl-theme' items={6}  loop margin={10} nav>
+            <OwlCarousel
+                className='owl-theme'
+                items={6}
+                loop margin={10}
+                nav>
                 <div class='item'>
                     <div className="item-image">
                         <img src="https://images.unsplash.com/photo-1708443683276-8a3eb30faef2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5Mnx8fGVufDB8fHx8fA%3D%3D" alt="" />

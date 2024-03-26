@@ -1,0 +1,169 @@
+.Banners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Banners-detail {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner-desc {
+    width: 100%;
+}
+
+.Banners img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+}
+
+.Banners-detail {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    border-radius: 10px;
+    padding-top: 10px;
+
+}
+
+.Banners-detail h1 {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    /* text-transform: uppercase; */
+    line-height: 1.35em;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.Banners-detail h4 {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    line-height: 25px;
+}
+
+
+
+/* button */
+
+.banner-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-button p {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: inherit;
+    display: inline-block;
+    padding: 8px 30px;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    color: black;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    font-weight: 600;
+  }
+.banner-button p svg{
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  
+  .banner-button p::before {
+    position: absolute;
+    content: "";
+    background: green;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    border-radius: 20%;
+  }
+  
+  .banner-button p:hover {
+    color: white;
+  }
+  
+  .banner-button p:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  .banner-button p:hover::before {
+    top: -30px;
+    left: 0px;
+  }
+  
+
+
+
+
+.Banners-order-box-checkin {
+    background-color: #aa8453;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .Banners-detail {
+        max-width: 1080px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .Banners-detail{
+        bottom: 10%;
+    }
+
+    .banner-desc{
+        width: 100%;
+    }
+    .Banners-detail h1 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+
+    .banner-button{
+        width: 100%;
+    }
+
+    .counter-box{
+        margin-bottom: 10px;
+    }
+
+}

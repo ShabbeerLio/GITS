@@ -4,6 +4,7 @@
     top: 0;
     z-index: 9999;
     transition: .5s ease;
+    background-color: green;
 }
 
 .navBar-main {
@@ -15,7 +16,7 @@
 }
 
 .navBar-logo {
-    padding: 30px 15px 0px;
+    padding: 0px 15px 0px;
 }
 
 .navBar-logo img {
@@ -46,7 +47,7 @@
     position: absolute;
     top: 15px;
     right: calc(100% + 16px);
-    background: #008ed3;
+    background: rgb(0, 80, 0);
 }
 
 /* 

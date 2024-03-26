@@ -32,7 +32,7 @@
 }
 
 .box-heading p:first-child {
-    color: red;
+    color: #008ed3;
     padding-right: 12px;
 }
 
@@ -57,7 +57,7 @@
     font-weight: 700;
     margin-bottom: 2rem !important;
     font-family: myriad;
-    color: #008ed3;
+    color: green;
 }
 
 .featured-detail-box2-left {

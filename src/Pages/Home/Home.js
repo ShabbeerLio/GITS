@@ -7,12 +7,14 @@ import Experties from '../../Component/Experties/Experties'
 import Addver from '../../Component/Advmt/Addver'
 import Company from '../../Component/Company/Company'
 import Review from '../../Component/Review.js/Review'
+import Banner from '../../Component/Banner/Banner'
+import Footer from '../../Component/Footer/Footer'
 
 const Home = () => {
   return (
     <div className='Home'>
       <div className="home-head">
-        Video
+        <Banner />
       </div>
       <div className="home-featured">
         <h2>Featured in the news</h2>
@@ -44,6 +46,10 @@ const Home = () => {
         <div className="review-box">
           <Review />
         </div>
+      </div>
+      <div className="home-company">
+        {/* <h2>Our Industry Expertise</h2> */}
+        <Company />
       </div>
     </div>
   )
