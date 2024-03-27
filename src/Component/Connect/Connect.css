@@ -1,0 +1,156 @@
+.Connect {
+  border-radius: 10px;
+}
+
+.connect-main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.connect-left {
+  width: 45%;
+  background: transparent linear-gradient(316deg, #000 0%, #224623 100%);
+  border: 1px solid #ffffffa5;
+  padding: 55px 40px;
+  border-radius: 20px;
+  color: white;
+}
+.connect-left .profile-pic img {
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.connect-left .profile-pic {
+  margin-bottom: 20px;
+}
+
+.connect-left h4 {
+  font: 400 40px / 60px;
+  letter-spacing: -1.26px;
+  margin-bottom: 14px;
+}
+.connect-left p {
+  font: 400 22px / 35px;
+  letter-spacing: -0.48px;
+  margin-bottom: 50px;
+}
+
+.contact-left-connect{
+    display: flex;
+    align-items: center;
+}
+
+/* call button */
+.connect-button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: transparent;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.connect-button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.button-content svg{
+  margin-left: 10px;
+}
+
+.connect-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background-color: green;
+  /* background: linear-gradient(
+    82.3deg,
+    rgb(2, 27, 4) 10.8%,
+    rgb(16, 75, 4) 94.3%
+  ); */
+  transition: all 0.475s;
+}
+
+.connect-items {
+    margin-left: 20px;
+}
+.connect-items a{
+    text-decoration: none;
+}
+.connect-items a svg{
+    font-size: 50px;
+}
+.connect-items a:first-child svg{
+    color: green;
+}
+.connect-items a:last-child svg{
+    color: rgb(27, 133, 255);
+}
+
+.connect-right {
+  width: 55%;
+}
+
+.contact-form-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-box label {
+  display: block;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.input-box input {
+  width: 100%;
+  color: black;
+  outline: none;
+  /* background-color: #62615e; */
+  margin-bottom: 5px;
+  border-style: solid;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid black;
+}
+.input-box textarea {
+  width: 100%;
+  color: black;
+  outline: none;
+  /* background-color: #62615e; */
+  margin-bottom: 20px;
+  border-style: solid;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid black;
+}

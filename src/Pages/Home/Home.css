@@ -16,7 +16,8 @@
 .home-experties,
 .advertise-box,
 .home-company,
-.review-box{
+.review-box,
+.contactUs {
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 1rem;
@@ -70,14 +71,7 @@
 .home-review {
   background-color: green;
 }
-/* .home-footer{
-  background: rgb(34, 70, 35);
-  background: radial-gradient(
-    circle,
-    rgba(34, 70, 35, 1) 0%,
-    rgba(6, 31, 0, 1) 100%
-  );
-} */
+
 
 @media (min-width: 1200px) {
   .home-featured {

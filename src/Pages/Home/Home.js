@@ -9,6 +9,7 @@ import Company from '../../Component/Company/Company'
 import Review from '../../Component/Review.js/Review'
 import Banner from '../../Component/Banner/Banner'
 import Footer from '../../Component/Footer/Footer'
+import Connect from '../../Component/Connect/Connect'
 
 const Home = () => {
   return (
@@ -20,13 +21,7 @@ const Home = () => {
         <h2>Featured in the news</h2>
         <FeaturedBox />
       </div>
-      <div className="home-work">
-        <h2>Our Work</h2>
-        {/* <WorkBox/> */}
-        work section
-      </div>
       <div className="home-solution">
-        {/* <h2>Our Solutions</h2> */}
         <Solution />
       </div>
       <div className="home-experties">
@@ -39,7 +34,6 @@ const Home = () => {
         </div>
       </div>
       <div className="home-company">
-        {/* <h2>Our Industry Expertise</h2> */}
         <Company />
       </div>
       <div className="home-review">
@@ -47,9 +41,8 @@ const Home = () => {
           <Review />
         </div>
       </div>
-      <div className="home-company">
-        {/* <h2>Our Industry Expertise</h2> */}
-        <Company />
+      <div className="contactUs">
+        <Connect />
       </div>
     </div>
   )

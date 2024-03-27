@@ -1,84 +1,120 @@
 import React, { useEffect, useState } from 'react'
 import "./Footer.css"
 import Logo from "../../Logo/gits.png"
-import Wave from '../Wave/Wave'
+import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
+import SocialMedia from '../SocialMedia/SocialMedia';
+import Star from '../Stars/Star';
 
-const Footer = (props) => {
-
+const Footer = () => {
+const [reviews, setReviews] = useState(34)
+const [stars, setStars] = useState(4.5);
     return (
         <>
             <div className="footer">
-                <Wave />
                 <div className="footer-main">
-                    <div className="footer-detail">
-                        <img src={Logo} alt="" />
-                        <p>We prioritize customer satisfaction and security. Trust us to be your go-to key maker.</p>
-                    </div>
-                    <div className="quick-link">
-                        <h2>Quick Link</h2>
-                        <ul>
-                            <li>
-                                <a href="/about">About Our Company</a>
-                            </li>
-                            <li>
-                                <a href="/projects">Recent Projects</a>
-                            </li>
-                            <li>
-                                <a href="/blogs"> Latest Blogs</a>
-                            </li>
-                            <li>
-                                <a href="/help">Help Desk</a>
-                            </li>
-                            <li>
-                                <a href="/career">Career With Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="footer-services">
-                        <h2>Services</h2>
-                        <ul>
-                            <li>SEO</li>
-                            <li>PPC</li>
-                            <li>Social Media</li>
-                            <li>Website Design</li>
-                            <li>Content Marketing</li>
-                            <li>Branding</li>
-                            <li>Remarketing</li>
-                            <li>CRO</li>
-                            <li>Inbound Marketing</li>
-                        </ul>
-                    </div>
-                    <div className="footer-contact">
-                        <h2>Contact </h2>
-                        <ul>
-                            <li>
-                                <p>
-
-                                </p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus!
-                            </li>
-                            <li>
-                                <p>
-
-                                </p>
-                                <a href="tel: +91">
-                                    +91 9876543210
-                                </a>
-                            </li>
-                            <li>
-                                <p>
-
-                                </p>
-                                <a href="tel: +91">
-                                    +91 9876543210
-                                </a>
-                            </li>
-                        </ul>
+                    <div className="footer-items">
+                        <div className="footer-detail">
+                            <img src={Logo} alt="" />
+                            <p>
+                                <span><FaPhone/></span>
+                                <a href="">120-4151836</a>
+                            </p>
+                            <p>
+                                <span><FaPhone/></span>
+                                <a href="">9958732814</a>
+                            </p>
+                            <p>
+                                <span><FaEnvelope/></span>
+                                <a href="">info@globalitsources.com</a>
+                            </p>
+                            <SocialMedia/>
+                        </div>
+                        <div className="quick-link">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li>
+                                    <a href="/about">Team</a>
+                                </li>
+                                <li>
+                                    <a href="/projects">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="/blogs"> Careers</a>
+                                </li>
+                                <li>
+                                    <a href="/help">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="/career">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="footer-services">
+                            <h4>Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="">Mobile App Development</a>
+                                </li>
+                                <li>
+                                    <a href="">web App Development</a>
+                                </li>
+                                <li>
+                                    <a href="">Mobile App Design</a>
+                                </li>
+                                <li>
+                                    <a href="">CRM Software Development</a>
+                                </li>
+                                <li>
+                                    <a href="">Mobile App Testing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="footer-industries">
+                            <h4>Industries</h4>
+                            <ul>
+                                <li>
+                                    <a href="">E-Governance</a>
+                                </li>
+                                <li>
+                                    <a href="">Finance</a>
+                                </li>
+                                <li>
+                                    <a href="">Healthcare</a>
+                                </li>
+                                <li>
+                                    <a href="">E-Commerce</a>
+                                </li>
+                                <li>
+                                    <a href="">Electric Vehicle</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="footer-technologies">
+                            <h4>Technologies</h4>
+                            <ul>
+                                <li>
+                                    <a href="">Artificial Intelligence</a>
+                                </li>
+                                <li>
+                                    <a href="">Blockchain</a>
+                                </li>
+                                <li>
+                                    <a href="">IoT</a>
+                                </li>
+                                <li>
+                                    <a href="">Data Science</a>
+                                </li>
+                                <li>
+                                    <a href="">AR/VR</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div className="footer-down">
                     <div className="footer-copyright">
                         <p>© 2024 Global IT Sources</p>
+                        <Star stars={stars} reviews={reviews}/>
                     </div>
                 </div>
             </div>
