@@ -4,6 +4,7 @@ import Logo from "../../Logo/gits.png"
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import SocialMedia from '../SocialMedia/SocialMedia';
 import Star from '../Stars/Star';
+import Faqs from '../Faqs/Faqs';
 
 const Footer = () => {
 const [reviews, setReviews] = useState(34)
@@ -12,6 +13,7 @@ const [stars, setStars] = useState(4.5);
         <>
             <div className="footer">
                 <div className="footer-main">
+                    <Faqs/>
                     <div className="footer-items">
                         <div className="footer-detail">
                             <img src={Logo} alt="" />
@@ -114,7 +116,7 @@ const [stars, setStars] = useState(4.5);
                 <div className="footer-down">
                     <div className="footer-copyright">
                         <p>© 2024 Global IT Sources</p>
-                        <Star stars={stars} reviews={reviews}/>
+                        <Star stars={stars} reviews={reviews} text={"reviews"}/>
                     </div>
                 </div>
             </div>

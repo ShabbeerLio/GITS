@@ -1,6 +1,19 @@
 .Connect {
   border-radius: 10px;
 }
+.Connect h3{
+  font-size: 50px ;
+  margin-bottom: 15px;
+  letter-spacing: -.96px;
+  color: #ffffff;
+}
+.Connect p{
+  width: 65%;
+  font-size: 22px ;
+  letter-spacing: -.56px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
 
 .connect-main {
   display: flex;
@@ -28,19 +41,21 @@
 }
 
 .connect-left h4 {
-  font: 400 40px / 60px;
+  font-size: 40px;
   letter-spacing: -1.26px;
   margin-bottom: 14px;
 }
 .connect-left p {
-  font: 400 22px / 35px;
+  font-size:  20px;
   letter-spacing: -0.48px;
   margin-bottom: 50px;
+  color: white;
+  width: 100%;
 }
 
-.contact-left-connect{
-    display: flex;
-    align-items: center;
+.contact-left-connect {
+  display: flex;
+  align-items: center;
 }
 
 /* call button */
@@ -71,7 +86,7 @@
   display: flex;
   align-items: center;
 }
-.button-content svg{
+.button-content svg {
   margin-left: 10px;
 }
 
@@ -85,29 +100,26 @@
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background-color: green;
-  /* background: linear-gradient(
-    82.3deg,
-    rgb(2, 27, 4) 10.8%,
-    rgb(16, 75, 4) 94.3%
-  ); */
+  /* background-color: green; */
+  background: transparent linear-gradient(180deg, #00702b 0%, #74fc62 100%) 0%
+    0% no-repeat padding-box;
   transition: all 0.475s;
 }
 
 .connect-items {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-.connect-items a{
-    text-decoration: none;
+.connect-items a {
+  text-decoration: none;
 }
-.connect-items a svg{
-    font-size: 50px;
+.connect-items a svg {
+  font-size: 50px;
 }
-.connect-items a:first-child svg{
-    color: green;
+.connect-items a:first-child svg {
+  color: green;
 }
-.connect-items a:last-child svg{
-    color: rgb(27, 133, 255);
+.connect-items a:last-child svg {
+  color: rgb(27, 133, 255);
 }
 
 .connect-right {
@@ -123,34 +135,39 @@
 
 .input-box label {
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 400;
   margin: 0px;
   margin-top: 12px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .input-box input {
   width: 100%;
-  color: black;
+  color: rgb(255, 255, 255);
   outline: none;
-  /* background-color: #62615e; */
+  background-color: transparent;
   margin-bottom: 5px;
   border-style: solid;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  border-bottom: 1px solid black;
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 .input-box textarea {
   width: 100%;
-  color: black;
+  color: rgb(255, 255, 255);
   outline: none;
-  /* background-color: #62615e; */
+  background-color: transparent;
   margin-bottom: 20px;
   border-style: solid;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  border-bottom: 1px solid black;
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
+
+/* .contact-form-box-button .connect-button {
+  color: black;
+  border: 1px solid black;
+} */

@@ -50,23 +50,23 @@ const Connect = () => {
         //     });
 
         // // Access the user's name, email, and message from the formData state
-        // const { user_name, user_number, user_email, message } = formData;
+        const { user_name, user_number, user_email, message } = formData;
 
-        // console.log('Name:', user_name);
-        // console.log('Number:', user_number);
-        // console.log('Email:', user_email);
-        // console.log('Message:', message);
+        console.log('Name:', user_name);
+        console.log('Number:', user_number);
+        console.log('Email:', user_email);
+        console.log('Message:', message);
 
-        // setFormData({
-        //     user_name: '',
-        //     user_number: '',
-        //     user_email: '',
-        //     message: ''
-        // });
+        setFormData({
+            user_name: '',
+            user_number: '',
+            user_email: '',
+            message: ''
+        });
     };
     return (
         <div className='Connect'>
-            <h4>Let's talk about you</h4>
+            <h3>Let's talk about you</h3>
             <p>Our team looks forward to hearing from you and these detail will help us to get back.</p>
             <div className="connect-main">
                 <div className="connect-left">
@@ -77,8 +77,8 @@ const Connect = () => {
                     <h4>Consult our experts</h4>
                     <p>Elevate your journey and empower your choices with our experts' insightful guidance.</p>
                     <div className="contact-left-connect">
-                        <div class="connect-button">
-                            <span class="button-content">Schedule a call <CgArrowLongRight /></span>
+                        <div className="connect-button">
+                            <span className="button-content">Schedule a call <CgArrowLongRight /></span>
                         </div>
                         <div className="connect-items">
                             <a href="">
@@ -103,21 +103,22 @@ const Connect = () => {
                                         onChange={handleInputChange} required
                                     />
                                 </div>
-                                <div className='input-box'>
-                                    <label>Number</label>
-                                    <input
-                                        name="user_number"
-                                        type="number"
-                                        value={formData.number}
-                                        onChange={handleInputChange} required
-                                    />
-                                </div>
+                                
                                 <div className='input-box'>
                                     <label>Email </label>
                                     <input
                                         name="user_email"
                                         type="email"
                                         value={formData.email}
+                                        onChange={handleInputChange} required
+                                    />
+                                </div>
+                                <div className='input-box'>
+                                    <label>Number</label>
+                                    <input
+                                        name="user_number"
+                                        type="number"
+                                        value={formData.number}
                                         onChange={handleInputChange} required
                                     />
                                 </div>
@@ -131,8 +132,8 @@ const Connect = () => {
                                 </div>
                             </div>
                             <div className="contact-form-box-button">
-                               <button class="connect-button" type="submit">
-                                    <span class="button-content">Schedule a call <CgArrowLongRight /></span>
+                               <button className="connect-button" type="submit">
+                                    <span className="button-content">Get a free Quote<CgArrowLongRight /></span>
                                 </button>
                             </div>
                         </form>

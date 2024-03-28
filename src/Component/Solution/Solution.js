@@ -19,7 +19,7 @@ const Solution = () => {
             <div className="solution-left">
                 <h2>Our Solution</h2>
                 <p>ANTS’ customised power solutions and a mighty pack of genius minds will ensure every marketing brief finds its worth. So, ready to scale up?</p>
-                <div class="featured-viewall solution-btn">
+                <div className="featured-viewall solution-btn">
                     <p>View all</p>
                 </div>
             </div>

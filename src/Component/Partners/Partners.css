@@ -1,0 +1,23 @@
+.partners h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  letter-spacing: -0.96px;
+  color: #000;
+}
+.partners p {
+  font-size: 22px;
+  letter-spacing: -0.56px;
+  color: #222;
+  width: 70%;
+}
+
+.partners-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 2rem;
+}
+.partners-box img {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 5 / 2;
+}

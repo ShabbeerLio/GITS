@@ -1,0 +1,49 @@
+.faqs {
+  padding: 5rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 6rem;
+}
+
+.faqs h3 {
+  font-size: 50px;
+  margin-bottom: 60px;
+  letter-spacing: -0.96px;
+  color: #ffffff;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #fff;
+}
+.accordion-item h2 {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  padding: 15px 20px 15px 0;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.accordion-item p {
+  text-align: left;
+  font-size: 25px !important;
+  letter-spacing: -0.96px !important;
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+.accordionHome .panel {
+  border-bottom: 1px solid #fff;
+}
+
+.accordion-body{
+    padding: 0px 30px ;
+    margin-bottom: 2rem;
+}

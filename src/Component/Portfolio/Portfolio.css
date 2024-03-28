@@ -1,0 +1,50 @@
+.Portfolio h3{
+    color: #222;
+    font: 600 75px / 83px Playfair-SemiBold;
+    letter-spacing: -1.68px;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+.Portfolio p{
+    font-size: 22px;
+    letter-spacing: -1.2px;
+    color: #000;
+    width: 70%;
+}
+
+.portfolio-counter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem 0;
+}
+
+.pfcounter-items{
+    border-right: 1.5px solid #707070;
+    border-bottom: 1.5px solid #707070;
+    padding: 2rem;
+}
+
+.pfcounter-items:first-child,
+.pfcounter-items:nth-child(4){
+    padding-left: 0;
+}
+.pfcounter-items:nth-child(3){
+    border-right: none;
+}
+.pfcounter-items:nth-child(4),
+.pfcounter-items:nth-child(5){
+    border-bottom: none;
+}
+
+.pfcounter-items h1{
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -3.87px;
+    color: black;
+}
+.pfcounter-items p{
+    font-size: 25px;
+    color: black;
+    width: 100%;
+}

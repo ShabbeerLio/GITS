@@ -82,6 +82,8 @@ margin-right: 10px;
   position: relative;
   width: 100%;
   margin-top: 50px;
+  border-top: 1px solid rgb(69, 69, 69);
+  padding-top: 10px;
 }
 
 .footer-copyright p a {

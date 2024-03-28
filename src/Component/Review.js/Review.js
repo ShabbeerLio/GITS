@@ -1,63 +1,58 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Review.css"
-import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import ReactOwlCarousel from 'react-owl-carousel';
+import clutch from "../../Assets/Partners/clutch_white.png"
+import Star from '../Stars/Star';
+import { CgArrowLongRight } from "react-icons/cg";
+import ReviewData from './ReviewData';
 
 const Review = () => {
+
+    const [stars, setStars] = useState(5);
     return (
         <div className='Review'>
+            <h3>What Our Clints Have To Say</h3>
+            <p> take pride in long-term relationships with our clients and appreciate their kind words for our on-time deliverables.</p>
             <div className="Review-box">
-                <OwlCarousel className='owl-theme' items={3} loop={Infinity} margin={10} nav>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1708443683276-8a3eb30faef2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5Mnx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
+                <div className="review-box-left">
+                    <div className="left-box-img">
+                        <img src={clutch} alt="" />
+                        <Star stars={stars} />
                     </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1707707289494-af5b6017f7ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDN8fHxlbnwwfHx8fHw%3D" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
+                    <div className="connect-button">
+                        <span className="button-content">Go to Clutch <CgArrowLongRight /></span>
                     </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://media.istockphoto.com/id/1189491089/photo/profile-view-of-young-happy-indian-businessman-in-suit-smiling.webp?b=1&s=170667a&w=0&k=20&c=xJKn2CscIg4ynFdpDBv0jnkRryVeu3SzQV-jnwSAMaQ=" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
+                    <div className="reviews-reviews">
+                        <p>34 reviews</p>
                     </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
-                    </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1497316730643-415fac54a2af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
-                    </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
-                    </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1466112928291-0903b80a9466?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
-                    </div>
-                    <div class='Review-boxes'>
-                        <div className='Review-box-image'>
-                            <img src="https://images.unsplash.com/photo-1466112928291-0903b80a9466?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt=""></img>
-                        </div>
-                        <p> We have worked with ants and they are quite professional in their approach. We worked with them on creating our technical brochures and they did a great job. They have good capabilities in shooting brand and corporate films. The recent work they did in creating a plant walkthrough for us was a great experience. We wish them the best for future. </p>
-                    </div>
-                </OwlCarousel>
+                </div>
+                <div className="review-box-right">
+
+                    <ReactOwlCarousel
+                        className='owl-theme'
+                        items={2}
+                        loop={Infinity}
+                        margin={10}
+                    >
+                        {ReviewData.map((item) => (
+                            <div className='Review-boxes' key={item.id}>
+                                <div className='Review-box-image'>
+                                    <img src={item.cover} alt="" />
+                                    <Star stars={stars} />
+                                </div>
+                                <h4>{item.name}</h4>
+                                <p>{item.brand}</p>
+                                <div className="people-desc">
+                                    <p>{item.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </ReactOwlCarousel>
+
+                </div>
+
             </div>
         </div>
     )
