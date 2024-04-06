@@ -21,9 +21,9 @@ const Review = () => {
                         <img src={clutch} alt="" />
                         <Star stars={stars} />
                     </div>
-                    <div className="connect-button">
-                        <span className="button-content">Go to Clutch <CgArrowLongRight /></span>
-                    </div>
+                    <button className="connect-button">
+                        <p>Go to Clutch <CgArrowLongRight /></p>
+                    </button>
                     <div className="reviews-reviews">
                         <p>34 reviews</p>
                     </div>

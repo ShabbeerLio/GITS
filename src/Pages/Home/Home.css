@@ -1,6 +1,6 @@
-.Home {
+/* .Home {
   overflow: hidden;
-}
+} */
 
 .home-head {
   width: 100%;
@@ -13,7 +13,7 @@
 .home-items {
   margin-left: auto;
   margin-right: auto;
-  padding: 6rem 0rem;
+  padding: 5rem 0rem;
   max-width: 1140px;
   position: relative;
 }
@@ -45,7 +45,8 @@
 
 
 .home-items-box{
-  background-color: green;
+  background: rgb(40,73,40);
+background: radial-gradient(circle, rgba(40,73,40,1) 1%, rgb(2, 29, 2) 99%);
 }
 
 .home-contactUs {

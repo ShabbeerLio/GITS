@@ -1,3 +1,6 @@
+.Services {
+  overflow: none;
+}
 .Services h3 {
   font-size: 50px;
   margin-bottom: 15px;
@@ -12,6 +15,7 @@
 }
 
 .Services ul {
+  list-style-type: none;
   padding: 0;
 }
 .Services ul li {
@@ -48,8 +52,41 @@
   top: 100px;
   padding-top: calc(var(--index) * var(--card-top-offset));
 }
-.strategy svg{
-    color: green;
+
+.strategy svg,
+.strategy .service-box-left h4 {
+  color: green;
+}
+
+.strategy .service-box-left ul li:before {
+  background-color: green;
+}
+
+.design svg,
+.design .service-box-left h4 {
+  color: #ff2d2d;
+}
+
+.design .service-box-left ul li:before {
+  background-color: #ff2d2d;
+}
+
+.digital svg,
+.digital .service-box-left h4 {
+  color: #4c79ff;
+}
+
+.digital .service-box-left ul li:before {
+  background-color: #4c79ff;
+}
+
+.development svg,
+.development .service-box-left h4 {
+  color: #ffa806;
+}
+
+.development .service-box-left ul li:before {
+  background-color: #ffa806;
 }
 
 .services-box {
@@ -59,14 +96,17 @@
   padding: 60px 50px 50px 60px;
   width: 100%;
 }
+
 .design .services-box {
   background: #fdf4f4;
   border: 2px solid #ffcfcf;
 }
+
 .digital .services-box {
   background: #f3f6ff;
   border: 2px solid #d5deff;
 }
+
 .development .services-box {
   background: #fff8ec;
   border: 2px solid #ffe1aa;
@@ -94,6 +134,7 @@
 
 .service-box-left {
   width: 50%;
+  margin-top: 20px;
 }
 
 .service-box-left h4 {
@@ -102,6 +143,10 @@
 }
 .service-box-left h4 svg {
   margin-right: 10px;
+  transition-duration: .35s;
+}
+.service-left-box:hover svg:last-child {
+  transform: translateX(10px);
 }
 .service-box-left h4 svg:last-child {
   margin-left: 10px;
@@ -118,16 +163,20 @@
   content: "";
   position: absolute;
   left: 0;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background-color: #348e38;
-  top: 8px;
+  top: 10px;
 }
+
 .service-box-right {
   width: 50%;
 }
 
+.service-box-right img{
+  width: 100%;
+  border-radius: 20px;
+}
 
 /* go to this website for design  */
 /* https://www.appventurez.com/ */

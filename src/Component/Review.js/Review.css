@@ -2,12 +2,12 @@
    font-size: 50px;
    margin-bottom: 15px;
    letter-spacing: -.96px;
-   color: #000;
+   color: #ffffff;
 }
 .Review p{
     font-size: 22px;
     letter-spacing: -0.56px;
-    color: #222;
+    color: #c5c5c5;
     width: 70%;
 }
 
@@ -72,6 +72,7 @@
     width: 100%;
     font-size: 16px;
     letter-spacing: -.44px;
+    color: black;
 }
 
 .people-desc{

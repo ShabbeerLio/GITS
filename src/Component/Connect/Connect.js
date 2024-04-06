@@ -77,9 +77,12 @@ const Connect = () => {
                     <h4>Consult our experts</h4>
                     <p>Elevate your journey and empower your choices with our experts' insightful guidance.</p>
                     <div className="contact-left-connect">
-                        <div className="connect-button">
+                        <button className="connect-button">
+                            <p>Schedule a call <CgArrowLongRight /></p>
+                        </button>
+                        {/* <div className="connect-button">
                             <span className="button-content">Schedule a call <CgArrowLongRight /></span>
-                        </div>
+                        </div> */}
                         <div className="connect-items">
                             <a href="">
                                 <IoLogoWhatsapp />
@@ -103,7 +106,7 @@ const Connect = () => {
                                         onChange={handleInputChange} required
                                     />
                                 </div>
-                                
+
                                 <div className='input-box'>
                                     <label>Email </label>
                                     <input
@@ -132,8 +135,8 @@ const Connect = () => {
                                 </div>
                             </div>
                             <div className="contact-form-box-button">
-                               <button className="connect-button" type="submit">
-                                    <span className="button-content">Get a free Quote<CgArrowLongRight /></span>
+                                <button className="connect-button" type="submit">
+                                    <p>Get a free Quote<CgArrowLongRight /></p>
                                 </button>
                             </div>
                         </form>

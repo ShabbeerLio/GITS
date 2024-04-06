@@ -1,0 +1,35 @@
+.clints h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  letter-spacing: -0.96px;
+  color: #000;
+}
+.clints p {
+  font-size: 22px;
+  letter-spacing: -0.56px;
+  color: #222;
+  width: 70%;
+}
+
+.clints-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-top: 20px;
+}
+
+.clints-images a {
+  border-right: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.clints-images a:nth-child(6n) {
+  border-right: none;
+}
+
+.clints-images a:nth-last-child(-n + 6) {
+  border-bottom: none;
+}
+.clints-images img {
+  width: 100%;
+  padding: 10px;
+}
