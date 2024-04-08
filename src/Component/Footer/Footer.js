@@ -13,7 +13,7 @@ const [stars, setStars] = useState(4.5);
         <>
             <div className="footer">
                 <div className="footer-main">
-                    <Faqs/>
+                    {/* <Faqs/> */}
                     <div className="footer-items">
                         <div className="footer-detail">
                             <img src={Logo} alt="" />

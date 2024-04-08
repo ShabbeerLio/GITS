@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import "./Connect.css"
 import { IoLogoWhatsapp, IoLogoSkype } from "react-icons/io";
 import { CgArrowLongRight } from "react-icons/cg";
+import Faqs from '../Faqs/Faqs';
 
 const Connect = () => {
     const form = useRef();
@@ -65,6 +66,7 @@ const Connect = () => {
         });
     };
     return (
+        <>
         <div className='Connect'>
             <h3>Let's talk about you</h3>
             <p>Our team looks forward to hearing from you and these detail will help us to get back.</p>
@@ -144,6 +146,8 @@ const Connect = () => {
                 </div>
             </div>
         </div>
+            <Faqs/>
+        </>
     )
 }
 

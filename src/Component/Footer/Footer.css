@@ -32,6 +32,9 @@
   align-items: baseline;
 
 }
+.footer-detail p a:hover {
+  color: rgb(123, 233, 123);
+}
 
 .footer-detail p a{
 text-decoration: none;
@@ -73,6 +76,12 @@ margin-right: 10px;
     font-size: 16px;
   color: white;
   text-decoration: none;
+}
+.quick-link ul li a:hover,
+.footer-services ul li a:hover,
+.footer-industries ul li a:hover,
+.footer-technologies ul li a:hover {
+  color: rgb(123, 233, 123);
 }
 
 .footer-copyright {

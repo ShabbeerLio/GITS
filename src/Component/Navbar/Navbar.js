@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import gits from "../../Logo/gits.png";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Navbar = (props) => {
   return (
@@ -31,7 +32,7 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item dropdown" id="hover-dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link "
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -39,7 +40,7 @@ const Navbar = (props) => {
                   aria-expanded="false"
                   href="/services"
                 >
-                  Services
+                  Services <FaChevronDown />
                 </a>
                 <div className="dropdown-menu mega-menu column2 ">
                   <li className="dropdown-submenu">
@@ -119,7 +120,7 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item dropdown" id="hover-dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link "
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -127,7 +128,7 @@ const Navbar = (props) => {
                   aria-expanded="false"
                   href="/services"
                 >
-                  Company
+                  Company<FaChevronDown />
                 </a>
                 <div className="dropdown-menu mega-menu column2 ">
                   <li className="dropdown-submenu">
@@ -151,7 +152,7 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item dropdown" id="hover-dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link "
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -159,7 +160,7 @@ const Navbar = (props) => {
                   aria-expanded="false"
                   href="/services"
                 >
-                  How We Help
+                  How We Help <FaChevronDown />
                 </a>
                 <div className="dropdown-menu mega-menu column2 ">
                   <li className="dropdown-submenu">

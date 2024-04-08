@@ -1,0 +1,96 @@
+.homedetail-head{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.homedetail-head h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+    letter-spacing: -0.96px;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.homedetail-head p{
+    font-size: 22px;
+    letter-spacing: -0.56px;
+    color: #222;
+}
+
+.homedetail-body{
+    display: flex;
+    padding-top: 40px;
+    position: relative;
+}
+.homedetail-body .home-des span{
+    position: absolute;
+    rotate: 90deg;
+    left: -15%;
+    bottom: 35%;
+    font-size: 265px;
+    font-weight: 900;
+    color: #37b62624;
+}
+
+.detail-body-left{
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.detail-body1-left{
+    width: 50%;
+    padding: 2rem;
+}
+.detail-body1-left h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+    letter-spacing: -0.96px;
+    color: #000;
+    font-weight: 400;
+}
+
+.detail-body-left h2{
+    font-size: 40px;
+    letter-spacing: -0.96px;
+    color: #003600;
+   
+}
+
+.detail-body-right,
+.detail-body1-right{
+    width: 50%;
+}
+
+.detail-body-right img,
+.detail-body1-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.homedetail-body1{
+    display: flex;
+}
+
+.detail-body1-left .connect-button{
+    border: 1px solid black;
+}
+.detail-body1-left .connect-button p{
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .homedetail-head{
+      max-width: 1140px;
+    }
+}

@@ -49,3 +49,6 @@
 .media-items p:hover:before {
     transform: scale(1);
 }
+.media-items p:hover svg {
+    color: black;
+}

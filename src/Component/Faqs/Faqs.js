@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Faqs.css"
+import { IoMdAdd } from "react-icons/io";
 
 const Faqs = () => {
     return (
@@ -10,6 +11,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingOne">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             Q. What mobile app development services does Appventurez offer?
+                            <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -28,6 +30,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingTwo">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             Q. Which development methodology do you prefer while developing an app?
+                         <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -43,6 +46,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingThree">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             Q. How much does mobile app development cost?
+                         <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -55,6 +59,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingfour">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
                             Q. Does Appventurez also offer app maintenance and support?
+                         <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapsefour" className="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
@@ -67,6 +72,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingFive">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                             Q. Does Appventurez sign a Non-Disclosure Agreement (NDA)?
+                         <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -79,6 +85,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingSix">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                             Q. Does Appventurez also assist with software integration and data migration?
+                         <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
@@ -94,6 +101,7 @@ const Faqs = () => {
                     <h2 className="accordion-header" id="flush-headingSeven">
                         <p className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
                             Q. How does the team at Appventurez ensure the security and quality of the software?
+                         <IoMdAdd/>
                         </p>
                     </h2>
                     <div id="flush-collapseSeven" className="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
