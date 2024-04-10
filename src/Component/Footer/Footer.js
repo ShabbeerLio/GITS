@@ -5,10 +5,11 @@ import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import SocialMedia from '../SocialMedia/SocialMedia';
 import Star from '../Stars/Star';
 import Faqs from '../Faqs/Faqs';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-const [reviews, setReviews] = useState(34)
-const [stars, setStars] = useState(4.5);
+    const [reviews, setReviews] = useState(34)
+    const [stars, setStars] = useState(4.5);
     return (
         <>
             <div className="footer">
@@ -18,36 +19,36 @@ const [stars, setStars] = useState(4.5);
                         <div className="footer-detail">
                             <img src={Logo} alt="" />
                             <p>
-                                <span><FaPhone/></span>
-                                <a href="">120-4151836</a>
+                                <span><FaPhone /></span>
+                                <Link to="tel: 1204151836">120-4151836</Link>
                             </p>
                             <p>
-                                <span><FaPhone/></span>
-                                <a href="">9958732814</a>
+                                <span><FaPhone /></span>
+                                <Link to="tel: +919958732814">+91 9958732814</Link>
                             </p>
                             <p>
-                                <span><FaEnvelope/></span>
-                                <a href="">info@globalitsources.com</a>
+                                <span><FaEnvelope /></span>
+                                <Link to="mailto:info@globalitsources.com"> info@globalitsources.com</Link>
                             </p>
-                            <SocialMedia/>
+                            <SocialMedia />
                         </div>
                         <div className="quick-link">
-                            <h4>About Us</h4>
+                            <h4>Quick Link</h4>
                             <ul>
                                 <li>
-                                    <a href="/about">Team</a>
+                                    <Link to="/about-us">About Us</Link>
                                 </li>
                                 <li>
-                                    <a href="/projects">Contact Us</a>
+                                    <Link to="/projects">Projects</Link>
                                 </li>
                                 <li>
-                                    <a href="/blogs"> Careers</a>
+                                    <Link to="/help">Help Desk</Link>
                                 </li>
                                 <li>
-                                    <a href="/help">Portfolio</a>
+                                    <Link to="/career">Career With Us</Link>
                                 </li>
                                 <li>
-                                    <a href="/career">Blogs</a>
+                                    <Link to="/contact-us">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
@@ -55,19 +56,19 @@ const [stars, setStars] = useState(4.5);
                             <h4>Services</h4>
                             <ul>
                                 <li>
-                                    <a href="">Mobile App Development</a>
+                                    <Link to="">Mobile App Development</Link>
                                 </li>
                                 <li>
-                                    <a href="">web App Development</a>
+                                    <Link to="">web App Development</Link>
                                 </li>
                                 <li>
-                                    <a href="">Mobile App Design</a>
+                                    <Link to="">Mobile App Design</Link>
                                 </li>
                                 <li>
-                                    <a href="">CRM Software Development</a>
+                                    <Link to="">CRM Software Development</Link>
                                 </li>
                                 <li>
-                                    <a href="">Mobile App Testing</a>
+                                    <Link to="">Mobile App Testing</Link>
                                 </li>
                             </ul>
                         </div>
@@ -75,19 +76,19 @@ const [stars, setStars] = useState(4.5);
                             <h4>Industries</h4>
                             <ul>
                                 <li>
-                                    <a href="">E-Governance</a>
+                                    <Link to="">E-Governance</Link>
                                 </li>
                                 <li>
-                                    <a href="">Finance</a>
+                                    <Link to="">Finance</Link>
                                 </li>
                                 <li>
-                                    <a href="">Healthcare</a>
+                                    <Link to="">Healthcare</Link>
                                 </li>
                                 <li>
-                                    <a href="">E-Commerce</a>
+                                    <Link to="">E-Commerce</Link>
                                 </li>
                                 <li>
-                                    <a href="">Electric Vehicle</a>
+                                    <Link to="">Electric Vehicle</Link>
                                 </li>
                             </ul>
                         </div>
@@ -95,19 +96,19 @@ const [stars, setStars] = useState(4.5);
                             <h4>Technologies</h4>
                             <ul>
                                 <li>
-                                    <a href="">Artificial Intelligence</a>
+                                    <Link to="">Artificial Intelligence</Link>
                                 </li>
                                 <li>
-                                    <a href="">Blockchain</a>
+                                    <Link to="">Blockchain</Link>
                                 </li>
                                 <li>
-                                    <a href="">IoT</a>
+                                    <Link to="">IoT</Link>
                                 </li>
                                 <li>
-                                    <a href="">Data Science</a>
+                                    <Link to="">Data Science</Link>
                                 </li>
                                 <li>
-                                    <a href="">AR/VR</a>
+                                    <Link to="">AR/VR</Link>
                                 </li>
                             </ul>
                         </div>
@@ -116,7 +117,7 @@ const [stars, setStars] = useState(4.5);
                 <div className="footer-down">
                     <div className="footer-copyright">
                         <p>© 2024 Global IT Sources</p>
-                        <Star stars={stars} reviews={reviews} text={"reviews"}/>
+                        <Star stars={stars} reviews={reviews} text={"reviews"} />
                     </div>
                 </div>
             </div>

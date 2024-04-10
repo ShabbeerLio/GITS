@@ -2,15 +2,16 @@ import React from "react";
 import "./Navbar.css";
 import gits from "../../Logo/gits.png";
 import { FaChevronDown } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
     <div className="navBar">
       <div className="navBar-main">
         <nav className="row navbar navbar-expand-lg navbar-light align-items-lg-end">
-          <a className="navBar-logo" href="/">
+          <Link className="navBar-logo" to="/">
             <img src={gits} alt="" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,183 +27,180 @@ const Navbar = (props) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/about-us">
+                <Link className="nav-link" to="/about-us">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown" id="hover-dropdown">
-                <a
+                <Link
                   className="nav-link "
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  href="/services"
                 >
                   Services <FaChevronDown />
-                </a>
+                </Link>
                 <div className="dropdown-menu mega-menu column2 ">
                   <li className="dropdown-submenu">
-                    <a
-                      href="/creative"
+                    <Link
+                      to="/creative"
                       className="dropdown-item "
                     >
                       SEO
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/digital-marketing"
+                      to="/digital-marketing"
                     >
                       PPC
-                    </a>
+                    </Link>
 
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       Social Media
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       Website Design
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       Content Marketing
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       Branding
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       Remarketing
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       CRO
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/technology"
+                      to="/technology"
                     >
                       Inbound Marketing
-                    </a>
+                    </Link>
                   </li>
                 </div>
               </li>
               <li className="nav-item dropdown" id="hover-dropdown">
-                <a
+                <Link
                   className="nav-link "
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  href="/services"
                 >
                   Company<FaChevronDown />
-                </a>
+                </Link>
                 <div className="dropdown-menu mega-menu column2 ">
                   <li className="dropdown-submenu">
-                    <a
-                      href="/creative"
+                    <Link
+                      to="/creative"
                       className="dropdown-item "
                     >
                       Industry Sectors
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/digital-marketing"
+                      to="/digital-marketing"
                     >
                       Career
-                    </a>
+                    </Link>
 
                   </li>
                 </div>
               </li>
               <li className="nav-item dropdown" id="hover-dropdown">
-                <a
+                <Link
                   className="nav-link "
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  href="/services"
                 >
                   How We Help <FaChevronDown />
-                </a>
+                </Link>
                 <div className="dropdown-menu mega-menu column2 ">
                   <li className="dropdown-submenu">
-                    <a
-                      href="/creative"
+                    <Link
+                      to="/creative"
                       className="dropdown-item "
                     >
                       Why Choose GITS
-                    </a>
+                    </Link>
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/digital-marketing"
+                      to="/digital-marketing"
                     >
                       GITS's 6-Step Marketing Process
-                    </a>
+                    </Link>
 
                   </li>
                   <li className="dropdown-submenu">
-                    <a
+                    <Link
                       className="dropdown-item "
-                      href="/digital-marketing"
+                      to="/digital-marketing"
                     >
                       Need Digital Marketing?
-                    </a>
+                    </Link>
 
                   </li>
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/blog">
+                <Link className="nav-link" to="/blog">
                   How We Help
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/ contact-us">
+                <Link className="nav-link" to="/ contact-us">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <div className="contact-button">
-                <a className="" href="">
+                <Link to="tel: +919958732814">
                   <p> <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
                     <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
                       <path strokeDasharray="64" strokeDashoffset="64" d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z">
@@ -223,7 +221,7 @@ const Navbar = (props) => {
                       </path>
                     </g>
                   </svg> Request a Call</p>
-                </a>
+                </Link>
               </div>
             </ul>
           </div>
